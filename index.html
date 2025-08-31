@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="netflix.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="cover"></div>
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo.svg" />
+        </div>
+        <div class="login-btns">
+          <button id="lng-btn" class="login-btn">English</button>
+          <button id="sign-in" class="login-btn">Sign In</button>
+        </div>
+      </div>
+      <!-- nav-bar -->
+      <!--main-page-contents -->
+      <div class="main-content">
+        <div class="main-items">
+          <h1>Unlimited movies, TV shows and more</h1>
+          <p>Starts at ₹149. Cancel at any time.</p>
+          <h3>
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </h3>
+          <div class="submit-btn-box">
+            <input type="text" placeholder="Email Address" />
+            <button class="submit-btn">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF HEADER -->
+    <div class="trending-cards">
+      <div class="card-container">
+        <div class="card-heading">
+          <h2>Trending Now</h2>
+        </div>
+        <div class="card-items-box">
+          <ul class="cards">
+            <button class="direction-right" disabled>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                role="img"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                data-icon="ChevronLeftStandard"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8.41409 12L15.707 19.2928L14.2928 20.7071L6.29277 12.7071C6.10523 12.5195 5.99988 12.2652 5.99988 12C5.99988 11.7347 6.10523 11.4804 6.29277 11.2928L14.2928 3.29285L15.707 4.70706L8.41409 12Z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <li>
+              <button class="card-1">
+                <span class="card-img"><img src="images/img_1.webp" /></span>
+                <span class="card-number">1</span>
+              </button>
+            </li>
+            <li>
+              <button class="card-1">
+                <span class="card-img"><img src="images/img_2.webp" /></span>
+                <span class="card-number">2</span>
+              </button>
+            </li>
+            <li>
+              <button class="card-1">
+                <span class="card-img"><img src="images/img_3.webp" /></span>
+                <span class="card-number">3</span>
+              </button>
+            </li>
+            <li>
+              <button class="card-1">
+                <span class="card-img"><img src="images/img_4.webp" /></span>
+                <span class="card-number">4</span>
+              </button>
+            </li>
+            <li>
+              <button class="card-1">
+                <span class="card-img"><img src="images/img_5.webp" /></span>
+                <span class="card-number">5</span>
+              </button>
+            </li>
+            <li>
+              <button class="card-1">
+                <span class="card-img"><img src="images/img_6.webp" /></span>
+                <span class="card-number">6</span>
+              </button>
+            </li>
+            <li>
+              <button class="card-1">
+                <span class="card-img"><img src="images/img_7.webp" /></span>
+                <span class="card-number">7</span>
+              </button>
+            </li>
+            <li>
+              <button class="card-1">
+                <span class="card-img"><img src="images/img_8.webp" /></span>
+                <span class="card-number">8</span>
+              </button>
+            </li>
+            <li>
+              <button class="card-1">
+                <span class="card-img"><img src="images/img_9.webp" /></span>
+                <span class="card-number">9</span>
+              </button>
+            </li>
+            <li>
+              <button class="card-1">
+                <span class="card-img"><img src="images/img_10.webp" /></span>
+                <span class="card-number">10</span>
+              </button>
+            </li>
+            <button class="direction-left" disabled>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                role="img"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                data-icon="ChevronRightStandard"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </ul>
+        </div>
+        <!-- card-items-box-End -->
+        <!-- More-reasons-box -->
+        <div class="section-2">
+          <div class="section-2-heading">
+            <h2>More reasons to join</h2>
+          </div>
+          <div class="section-2-cards">
+            <div class="section-card">
+              <h3>Enjoy on Your Tv</h3>
+              <p>
+                Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+                Blu-ray players and more.
+              </p>
+              <span></span>
+            </div>
+            <div class="section-card">
+              <h3>Download your shows to watch offline</h3>
+              <p>
+                Save your favourites easily and always have something to watch.
+              </p>
+              <span></span>
+            </div>
+            <div class="section-card">
+              <h3>Watch everywhere</h3>
+              <p>
+                Stream unlimited movies and TV shows on your phone, tablet,
+                laptop and TV.
+              </p>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="section-card">
+              <h3>Create profiles for kids</h3>
+              <p>
+                Send kids on adventures with their favourite characters in a
+                space made just for them — free with your membership.
+              </p>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <!-- faq-section -->
+       
+        <div class="faq-section">
+              <div class="faq-heading">
+                <h2>Frequently Asked Questions</h2>
+              </div>
+                <ul class="faq-ul">
+                    <li id="answer-box-div">
+                        <button class="faq-card">
+                            <h3>What is Netflix?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1k443u-StyledPlusLarge e164gv2o4">
+                                <path fill="currentColor" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                        </button>
+                        <!-- <div class="answer-box">
+                            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more - on thousands of internet-connected devices. <br>
+
+                                You can watch as much as you want, whenever you want, without a single ad - all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                        </div> -->
+                    </li>
+                    <li id="answer-box-div">
+                        <button class="faq-card">
+                            <h3>How much does Netflix cost?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1k443u-StyledPlusLarge e164gv2o4">
+                                <path fill="currentColor" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                        </button>
+                    </li>
+                    <li id="answer-box-div">
+                        <button class="faq-card">
+                            <h3>Where I can watch?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1k443u-StyledPlusLarge e164gv2o4">
+                                <path fill="currentColor" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                        </button>
+                    </li>
+                    <li id="answer-box-div">
+                        <button class="faq-card">
+                            <h3>How do I cancel?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1k443u-StyledPlusLarge e164gv2o4">
+                                <path fill="currentColor" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                        </button>
+                    </li>
+                    <li id="answer-box-div">
+                        <button class="faq-card">
+                            <h3>What can I watch on Netflix?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1k443u-StyledPlusLarge e164gv2o4">
+                                <path fill="currentColor" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                        </button>
+                        
+                    </li>
+                    <li id="answer-box-div">
+                        <button class="faq-card">
+                            <h3>Is Netflix good for Kids?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1k443u-StyledPlusLarge e164gv2o4">
+                                <path fill="currentColor" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <!-- End of the faq-section -->
+            <div class="footer-card">
+              <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+              <div class="footer-button">
+                <input type="text" placeholder="Email Address">
+                <button>Get Started</button>
+              </div>
+            </div>
+            <div class="footer">
+              <div class="footer-heading">
+                <span>Questions? Call 000-800-919-1743</span>
+              </div>
+              <ul class="footer-ul">
+                <li><a href="#">FAQ</a></li>
+              <li><a href="#">Invester Relations</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Speed Test</a></li>
+      
+              <li><a href="#">Help Centre</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+              <li><a href="#">Legal Notices</a></li>
+              
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Ways to Watch</a></li>
+              <li><a href="#">Coporate Information</a></li>
+              <li><a href="#">Only on Netflix</a></li>
+      
+              <li><a href="#">Media Centre</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Contact Us</a></li>
+      
+            </ul>
+            <div class="footer-select">
+              <select name="language">
+                <option value="English">English</option>
+                <option value="hindi">हिन्दी</option>
+              </select>
+            </div>
+            <div class="footer-logo">
+              <p>Netflix India</p>
+            </div>
+            </div>
+            <!-- End-of footer -->
+
+
+
+
+      </div>
+    </div>
+
+    <script src="netflix.js"></script>
+  </body>
+</html>

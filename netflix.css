@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter","sans-serif";
+    color: #fff;
+}
+
+.navbar {
+    height: 88px;
+    width: 80vw;
+    margin: auto;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.logo img {
+    height: 48px;
+    width: 140px;
+}
+
+.logo {
+    width: 40vw;
+    max-width: 1240px;
+}
+
+.login-btns {
+    width: 50vw;
+    max-width: 1400px;
+    text-align: right;
+
+}
+
+.login-btn {
+    height: 32px;
+    width: 76px;
+    padding: 5px;
+    background: none;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#lng-btn {
+    width: 125px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+#sign-in {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: #e50914;
+    font-weight: 500;
+    font-size: 0.785rem;
+}
+
+#sign-in:hover {
+    background: rgb(197, 6, 16);
+}
+
+.header {
+    height: 95vh;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border: 2px solid black;
+}
+
+.cover {
+    background: black;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    height: 95vh;
+    width: 100%;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 29rem;
+    width: 91.2rem;
+    margin: auto;
+    z-index: 20;
+    position: inherit;
+}
+
+.main-content h1 {
+    font-size: 3.36rem;
+    font-weight: 800;
+}
+
+.main-items {
+    height: 18.6rem;
+    width: 35.28rem;
+}
+
+.main-items p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    z-index: 20;
+}
+
+.main-items h3 {
+    font-size: 0.96rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.submit-btn-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.submit-btn-box input {
+    height: 3.36rem;
+    width: 22.28rem;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.573);
+}
+
+.submit-btn-box button {
+    height: 3.36rem;
+    width: 12.48rem;
+    border-radius: 5px;
+    border: 0.5px solid transparent;
+    background-color: #e50914;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.submit-btn-box button:hover {
+    background-color: #b90710;
+}
+
+.trending-cards {
+    height: 121.92rem;
+    background-color:black;
+    max-width: 120rem;
+}
+
+.card-container {
+    height: 18.96rem;
+    width: 73.44rem;
+    margin: auto;
+}
+
+.card-heading {
+    width: 100%;
+}
+
+.card-heading h2 {
+    padding-top:30px;
+    font-size: 1.44rem;
+    font-weight: 600;
+    padding-bottom:25px;
+}
+
+.card-items-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    height: 16.8rem;
+    width: 100%;
+    max-width: 120rem;
+    list-style: none;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.cards .card-1 {
+    background-size: contain;
+    z-index: 2;
+    position: relative;
+    background-color: black;
+    border:2px solid #00000000;
+    border-radius:0.5rem;
+}
+.cards .card-img {
+    height: 15.12rem;
+    width: 10.8rem;
+    background-size:contain;
+    cursor:pointer;
+    border-radius: 0.8rem;
+}
+
+.cards .card-number {
+    height:6rem;
+    width: 3.48rem;
+    font-size: 6.25rem;
+    font-weight: 700;
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    position: absolute;
+    color: black;
+    -webkit-text-stroke: 2px white;
+    bottom: 0;
+    left:0;
+    cursor: pointer;
+    padding-bottom:35px;
+    padding-left:0 ;
+    text-align:left;
+    border-radius:0.5rem;
+}
+.card-1.hidden
+{
+    display:none;
+}
+.direction-right{
+    height:7.2rem;
+    width:1.44rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color:#0f0f0f;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+      
+}
+.direction-left{
+    height:7.2rem;
+    width:1.44rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color:#0f0f0f;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;  
+}
+.section-2{
+    height:23.06rem;
+    width:74.4rem;
+    margin-top:4.5rem;
+    display:flex;
+    flex-wrap:wrap;
+}
+.section-2:hover {
+    height:25.06rem;
+    width:74.4rem;
+}
+.section-2-heading h2{
+    font-size:1.44rem;
+    font-weight:500;
+    text-align: left;
+    margin-left:16px;
+}
+.section-2-cards{
+    height:17.89rem;
+    width:100%;
+    display:flex;
+    align-items:center;
+    margin-top:30px;
+}
+.section-card{
+    height:286px;;
+    width:294px;
+    background:linear-gradient(135deg,#1c2448,#1f1323,#1e0c19);
+    display:flex;
+    flex-wrap:wrap;
+    margin:10px;
+    border-radius:20px;
+    padding-top:10px;
+    border:2px solid transparent;
+    position:relative;
+}
+.section-card h3{
+    height:25px;
+    width:100%;
+    font-size:1.44rem;;
+    font-weight: 500;
+    text-align:left;
+    display:inline-block;
+    padding-left:10px;
+}
+.section-card p{
+    width:100%;
+    font-size:0.96rem;
+    color:#ffffffb3;
+    font-weight: 400;
+    padding-left:10px;
+}
+.faq-section{
+    height:36.96rem;
+    width:100%;
+    margin-top:16px;
+}
+.faq-heading h2{
+    height:32px;
+    font-size:1.44rem;
+    margin-bottom:10px;
+}
+.faq-ul{
+    height:33.12rem;
+    width:100%;
+    list-style: none;
+}
+.faq-card{
+    height:5.04rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:24px;
+    cursor:pointer;
+    background-color: #2d2d2d;
+    border-radius:2px;
+    border:2px solid transparent;
+    border-bottom:2px solid black;
+    margin-bottom:2px;
+
+}
+.faq-card h3{
+   font-size:1.5rem;
+   font-weight:300;
+   color:#ffffff;
+   font-family: "Inter", sans-serif;
+}
+.faq-card .answer-box{
+    height:12rem;
+    width:100%;
+    display:flex;
+    justify-items: center;
+    align-items:center;
+}
+.answer-box p{
+    font-size:1.5rem;
+    background-color:#2e2e2e;
+    font-weight:300;
+    color:#ffffff;
+    text-align: left;
+    padding:24px;
+    margin-bottom:2px;
+}
+
+.footer-card{
+    height:5.76rem;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.footer-card h3{
+    width:100%;
+    text-align:center;
+    font-size:0.9rem;
+    font-weight:400;
+}
+.footer-card button{
+    height: 3.36rem;
+    width: 12.48rem;
+    border-radius: 5px;
+    border: 0.5px solid transparent;
+    background-color: #e50914;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.footer-button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    width:100%;
+}
+.footer-card input{
+    height: 3.36rem;
+    width: 22.28rem;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.573);
+    padding-left: 5px;
+    margin-left:5px;
+}
+.footer{
+    height:22.08rem;
+    width:100%;
+    display:flex;
+    justify-content:center ;
+    align-items:center;
+    flex-wrap:wrap;
+    color:#ffffffb3;
+}
+.footer-ul{
+    height:7.92rem;
+    color:#ffffffb3;
+    width:100%;
+    list-style: none;
+    background-color:black;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.footer-ul a{
+    color:#ffffffb3;
+}
+.footer-heading{
+    width:100%;
+}
+.footer-select{
+    width:100%;
+}
+.footer-select select{
+    height:32px;
+    width:120px;
+    border:1px solid white;
+    border-radius:5px;
+    color:white;
+    background-color:transparent;
+}
+.footer-logo{
+    width:100%;
+}
+.footer-logo p{
+    text-decoration:underline;
+    font-size:0.9rem;
+    font-size:400;
+    color:#ffffffb3;
+}
